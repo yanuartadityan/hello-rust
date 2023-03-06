@@ -21,7 +21,10 @@ fn main() {
         .read_line(&mut guess)
         .expect("Failed to read input...");
 
-    let guess_int: u16 = guess.trim().parse().expect("Wrong format...Please enter a number");
+    let guess_int: u16 = guess
+        .trim()
+        .parse()
+        .expect("Wrong format...Please enter a number");
 
     println!("Secret key: {}", secret);
     println!("You guessed: {}", guess);

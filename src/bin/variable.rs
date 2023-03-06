@@ -36,4 +36,14 @@ fn main() {
         pangram_str_2.push(word);
     }
     println!("Pangram 2: \n{}", pangram_str_2);
+
+    // Parse string to number
+    let num: u32 = "32".parse().expect("Not a valid number you moron!");
+    println!("Parsed num: {num}");
+
+    // Vector of &str
+    let letters: Vec<&str> = vec!["asu", "kowe", "tenan"];
+    for e in letters {
+        println!("> {e}");
+    }
 }
