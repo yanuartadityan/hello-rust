@@ -10,11 +10,11 @@ fn main() {
 
     // accessing array
     println!("which index to read:");
-    let mut index = String::new();
+
+    let mut index: String = String::new();
     io::stdin()
         .read_line(&mut index)
         .expect("Failed to read user input...");
-
     let index_num: usize = index.trim().parse().expect("Failed to parse...");
     println!("array at index-{} is {}", index_num, simp_arr[index_num]);
 }

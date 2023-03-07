@@ -14,5 +14,4 @@ fn main() {
     tup2.0 = "Nugraha";
     tup2.1 = "Yotta";
     println!("{} {} is {} years old", tup2.0, tup2.1, tup2.2);
-
 }

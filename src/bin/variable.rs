@@ -46,4 +46,11 @@ fn main() {
     for e in letters {
         println!("> {e}");
     }
+
+    // Expression of statement
+    let x = {
+        let y = 3;
+        y + 1 /* statement, not expression without semicolon */
+    };
+    println!("value of x is {x}");
 }
